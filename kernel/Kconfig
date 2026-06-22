@@ -15,6 +15,25 @@ config KSU_DEBUG
 	default n
 	help
 	  Enable KernelSU debug mode.
+config KSU_MULTI_MANAGER_SUPPORT
+        bool "Multi Manager Support"
+        depends on KSU
+        default n
+        help
+          Enable support for multiple KernelSU manager APKs.
+          
+          This allows using various KernelSU manager APKs:
+          - 5ec1cff/KernelSU
+          - rsuntk/KernelSU  
+          - SukiSU-Ultra
+          - KOWX712/KernelSU
+		  - ResukiSU
+          - Custom manager
+          - PR Build manager
+          
+          Say Y here if you want to use multiple manager APKs.
+          Say N if you only use KernelSU Next manager.
+
 
 config KSU_DISABLE_MANAGER
 	bool "Disable KernelSU manager integration"
