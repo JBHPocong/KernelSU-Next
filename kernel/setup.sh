@@ -3,7 +3,7 @@ set -eu
 
 GKI_ROOT=$(pwd)
 OWNER="JBHPocong"
-REPO="KernelSU-Next"
+REPO="KernelSU-Next-Multimanager"
 
 display_usage() {
     echo "Usage: $0 [--cleanup | <commit-or-tag>]"
